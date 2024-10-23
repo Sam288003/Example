@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.hero {
+    /* height : 100vh; */ /* viewport 100% */
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    padding : 0 20px;
+    /* background-color : coral; */
+    background-image : url(https://picsum.photos/200/300);
+    /* background-image : url(https://unsplash.com/photos/a-cell-phone-laying-on-top-of-a-piece-of-paper-catUz9OVQdg); */
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-position : center;
+    /* background-attachment : fixed; */
+    background-attachment : local;
+    background : linear-gradient(to bottom, lightgreen, darkblue);
+    background : linear-gradient(to bottom left, lightgreen, darkblue);
+
+}

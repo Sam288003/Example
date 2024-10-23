@@ -1,0 +1,33 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+html {
+    font-size : 10px;
+}
+
+.container {
+    max-width : 900px;
+    margin : 20px auto;
+    padding : 20px;
+    border : 1px solid black;
+}
+
+p {
+    font-size : 1rem;
+    margin : 1rem;
+}
+
+/* rem is based on root size to calculate % */
+h1 {
+    font-size: 2rem;
+    padding : 0.3rem 0;
+}
+
+/* em is based on upper level to calculate % */
+ul {
+    font-size: 1.5em;
+}
+

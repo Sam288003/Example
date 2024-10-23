@@ -1,0 +1,60 @@
+* { 
+    margin : 0;
+    padding : 0;
+}
+
+body {
+    font-family : Arial, Helvetica, sans-serif;
+}
+
+.container {
+    /* height : 650px; */
+    width : 100%;
+    display : flex;
+    background-color : pink;
+/* can be row-reverse, column */
+    flex-direction : row;
+    /* flex-wrap : wrap; */
+    /* distribute space evenly btn the items */
+    /* space around, space evenly , flex-start, flex-end, center...*/
+    justify-content : space-between;
+    /* cross axis */
+    align-items : center;
+    align-items : stretch;
+    /* also has row gap */
+    /* column-gap : 10px; */
+}
+
+.flex-item {
+    height : 100px;
+    width : 300px;
+    background-color : orange;
+    border : 1px solid blue;
+}
+
+.flex-item.item-1 {
+    /* flex-grow : 3; */
+    flex-shrink : 1;
+    order : 3;
+}
+
+.flex-item.item-2 {
+    /* align-self : flex-end; */
+    flex-shrink: 3;
+    /* 0 means never scale big */
+    /* flex-grow : 0 */
+    order : 4;
+}
+
+.flex-item.item-3 {
+    /* flex-grow : 2; */
+    align-self : center;
+    flex-shrink : 0;
+    order : 1;
+}
+
+.flex-item.item-4 {
+    /* flex-grow : 1; */
+    flex-shrink : 5;
+    order : 3;
+}

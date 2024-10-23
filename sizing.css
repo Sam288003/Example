@@ -1,0 +1,64 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* content-box is based on text */
+    /* box-sizing: content-box; */
+    /* border-box is for responsive design, based on border */
+    box-sizing: border-box;
+} 
+
+.box {
+    background-color: blue;
+    color: white;
+    /* border: 3px solid red; */
+    border : 0;
+    /* top right bottom left padding */
+    padding: 40px 70px 0px 30px;
+    /* top_bottom right_left */
+    padding: 40px 0px;
+    /* top right_left bottom */
+    padding: 40px 0px 70px;
+    margin: 20px 30px 0px 70px;
+}
+
+/* width and height will scale within the container div */
+.box-1 {
+    color: black;
+    margin: 50px;
+    /* text will overflow */
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    overflow: scroll;
+    border-top : 4px red;
+    border-bottom : 4px dashed orange;
+}
+
+.box-2 {
+    width: 50%;
+    border-left : 10px dotted green; 
+    border-right : 10px solid yellowgreen;
+}
+
+/* .box-2 p {
+    width: 50%;
+} */
+
+/* dimension can be REM=EM, 1EM=16px, can be %, in, cm, mm, pt, pc(pica) */
+.box-3 {
+    /* border-radius makes round corner */
+    border-radius: 10px;
+    max-width : 800px;
+    min-width : 800px;
+    padding-top :100px;
+    padding-bottom : 0px;
+    padding-left : 50px;
+    padding-right : 0px;
+    border-radius : 200px;
+    border-top-left-radius : 500px
+}
+
+.box-3 p {
+    width : 50%;
+}

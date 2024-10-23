@@ -1,0 +1,36 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+body {
+    font-family : Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+}
+
+.container {
+    width : 400px;
+    /* after deducting container width from page width, the rest space will be
+     divided by 2 as the margin */
+    margin: 150px auto;
+}
+
+.box {
+    width : 200px;
+    height : 200px;
+    border : 1px solid #ccc;
+    border-radius : 10px;
+}
+
+.box-1 {
+    box-shadow : 10px 10px 10px 2px #000;
+}
+
+.box-2 {
+    box-shadow : 5px 4px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.box-3 {
+    box-shadow : 5px 4px 10px 2px rgba(0, 0, 0, 0.5), -5px 10px 5px red;
+}

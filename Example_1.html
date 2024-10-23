@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="HTML example" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Sam" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<br>
+    <!--headings-->
+    <!-- header background color is block -->
+    <header style="background-color: chartreuse;">
+        
+        <div>
+            <!-- h1 background color is inline -->
+            <h1 style="background-color: black;">Html example 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </div>
+    </header>
+
+
+    <header>
+        <!-- h1 background color is inline -->
+        <h1>Html example 2</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+    </header>
+
+
+    <header>
+        <div class = "container">
+            <div  class = "card">
+            <h1>Html example 3</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            </div>
+        </div>
+    </header>
+
+
+    <header>
+        <div class = "container">
+            <div  class = "card">
+            <h1>Html example 4</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            </div>
+        </div>
+    </header>
+
+
+    <!--paragraph-->
+    <article>
+        <p id="service">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore similique expedita facere aspernatur, alias qui sunt quo explicabo quia nulla quae provident minima perferendis laboriosam ad animi minus, ducimus optio?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, quibusdam.
+        </p>
+        <!--text emphasis tags-->
+        <p>This is <strong>Important !</strong></p>
+        <p>This is <em>emphasized</em>text</p>
+        <p>This is <del>deleted</del>text</p>
+        <p>This is <mark>marked</mark>text</p>
+        <p>This is <ins>inserted</ins>text</p>
+        <p>This is <sub>subscript</sub>text</p>
+        <p>This is <sup>superscript</sup>text</p>
+    </article>
+
+    <!--List-->
+    <section>
+        <!--unorder list-->
+        <ul>
+            <li>Item one</li>
+            <li>Item two</li>
+            <li>Item three</li>
+            <li>Item four</li>
+        </ul>
+        <!--order list-->
+        <ol>
+            <li>Item one</li>
+            <li>Item two</li>
+            <li>Item three</li>
+            <li>Item four</li>
+        </ol>
+        <!--nested list-->
+        <ul>
+            <li>Item one</li>
+            <li>Item two</li>
+            <ul>
+                <li>Item three</li>
+                <li>Item four</li>
+                <ul>
+                    <li>Item five</li>
+                    <li>Item six></li>
+                </ul>
+            </ul>
+        </ul>
+    </section>
+
+    <!-- links -->
+    <div> 
+        <h2>external link</h2>
+        <!-- external link background color is inline -->
+        <a href="https://google.com" style="background-color: aqua;">Google</a>
+        <h2>link with target</h2>
+        <a href="https://google.com" target="_blank">Google</a>
+        <h2>relative link</h2>
+        <a href="About.html">ABOUT</a>
+        <h2>internal link</h2>
+        <a href="#service">go to service section</a>
+        <h2>email link</h2>
+        <a href="mailto:xxx@example.com">send an emai</a>
+        <h2>file link</h2>
+        <a href="invoice.pdf">Download document</a>
+        <h2>title attribute</h2>
+        <a href="About.html" title="go to about">About page</a>
+    </div>
+
+    <!--images-->
+        <img src="https://picsum.photos/200/300" alt="image" width="100px" height="100px" title="random picture"/>
+
+        <figure>
+            <img src="https://picsum.photos/200/300" alt="image" width="100px" height="100px" title="random picture"/>
+            <figcaption>
+            Fig 1. - Random Choice
+            </figcaption>
+        </figure>
+
+    <!-- form -->
+        <form action="#" method="Get">
+            <!-- label for needs to map which id, i.e. backend knows label for 'name' links to id 'name' -->
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required placeholder="Please input name" />
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" minlength="3" maxlength="5" required/>
+            </div>
+            <div>
+                <label for="email">email</label>
+                <input type="email" name="email" id="email"
+                value="sam@example.com" />
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- </html> -->
+            <form>
+                <label for="product">Product</label>
+                <div>
+                <select name="product" id="product" multiple size="2">
+                    <option value="iphone">iphone</option>
+                    <option value="samsung" selected>samsung</option>
+                    <option value="nokia">nokia</option>
+                </select>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </br>
+        <!-- form checkbox and radio -->
+        <form>
+            <div>
+                <label for="html">
+                    <input type="checkbox" name="web" id="html" value="html" />HTML
+                </label>
+                <label for="css">
+                    <input type="checkbox" name="web" id="css" value="css" checked/>CSS
+                </label>
+            </div>
+        </form>
+        </br>
+
+            <div>
+                <label for="small">
+                    <input type="radio" name="size" id="small" value="small" />small
+                </label>
+                <label for="medium">
+                    <input type="radio" name="size" id="medium" value="medium" checked />medium
+                </label>
+                <label for="large">
+                    <input type="radio" name="size" id="large" value="large" />large
+                </label>
+            </div>
+
+            <div>
+                <label for="Message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="enter your message here"></textarea>
+                </br>
+                <input type="submit" />
+                </br>
+                <a href="#" type="submit">Send</a>
+            </div>
+
+            <form>
+                <div>
+                    <label for="color">Color</label>
+                    <input type="color" name="color" id="color" />
+                </div>
+
+                <div>
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date" />
+                </div>
+
+                <div>
+                    <label for="time">Time</label>
+                    <input type="time" name="time" id="time" />
+                </div>
+
+                <div>
+                    <label for="week">Week</label>
+                    <input type="week" name="week" id="week" />
+                </div>
+
+                <div>
+                    <label for="month">Month</label>
+                    <input type="month" name="month" id="month" />
+                </div>
+
+                <div>
+                    <label for="range">Range</label>
+                    <input type="range" name="range" id="range" min="0" max="100" step="10" />
+                </div>
+
+                <div>
+                    <label for="url">url</label>
+                    <input type="url" name="url" id="url" />
+                    <!-- when enter url, need to enter the full format http://www.xxx.com -->
+                </div>
+
+                <div>
+                    <!-- list select -->
+                    <label for="lang">Programming Language</label>
+                    <!-- now data type is list, not type -->
+                    <input list="languages" name="lang" id="lang" />
+                    <datalist id="languages">
+                        <option value="Python"></option>
+                        <option value="Java"></option>
+                        <option value="C++"></option>
+                        <option value="JavaScript"></option>
+                    </datalist>
+                </div>
+
+                <!-- range with datalist -->
+                <label for="range1">Range</label>
+                <input type="range" list="range2" name="range1" id="range1" min="0" max="100" step="10" />
+                    <div>
+                        <datalist id="range2">
+                        <option value="0"></option>
+                        <option value="10"></option>
+                        <option value="20"></option>
+                        <option value="30"></option>
+                        <option value="40"></option>
+                        <option value="50"></option>
+                        <option value="60"></option>
+                        <option value="70"></option>
+                        <option value="80"></option>
+                        <option value="90"></option>
+                        <option value="100"></option>
+                        </datalist>
+                    </div>
+                
+
+            </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

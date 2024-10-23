@@ -1,0 +1,46 @@
+/* select by element tab */ 
+h1 {
+    color: white;
+}
+
+h2 {
+    color: blue;
+}
+
+/* select by id */
+#service {
+    background-color:aquamarine
+}
+
+header {
+    color: green;
+}
+
+/* means h1 follows header immediately */
+header > h1 {
+    color: yellow;
+}
+
+/* means all follows header immediately */
+/*
+header h1 {
+    color: rgb(83, 16, 122);
+}
+*/
+
+/* # select by class name */
+.container{
+    color: lime
+}
+
+.card {
+    color: purple;
+}
+
+.container .card {
+    color: orange
+}
+
+.container .card h1 {
+    color: rgb(255, 0, 170)
+}
