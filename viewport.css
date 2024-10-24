@@ -1,0 +1,26 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+body {
+    font-family : "Times New Roman" , Times , serif;
+}
+.container {
+    background : orange;
+    /* height : 500px; this setting no auto scale*/
+    height : 100vh;     /* viewport is the size of the browser*/
+    width : 100vw;   /* Beaware its width, vw*/
+    overflow : hidden;
+}
+
+.container h1 {
+    font-size : 7vw;
+}
+
+.container p {
+    /* overflow : hidden; */
+    overflow : scroll;
+}
+

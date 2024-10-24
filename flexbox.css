@@ -34,7 +34,7 @@ a:hover {
 header {
     /* background-color : orangered; */
     background-color : hsl(30, 99%, 55%);
-    padding : 50px;
+    padding : 30px;
     text-transform : capitalize;
 }
 
@@ -106,4 +106,38 @@ aside li {
 .container {
     width : 1600px;
     margin : auto;
+}
+
+@media (max-width : 768px) {
+    .header {
+        padding : 20px;
+    }
+}
+
+.header h1 {
+    font-size : 1.5rem;
+    text-align : center;
+}
+
+.nav-list {
+    flex-direction : column;
+    text-align : center;
+}
+
+.nav-list li {
+    border-bottom : 1px solid #ccc;
+    padding-bottom: 8px;
+}
+
+li.last-item {
+    border : name;
+}
+
+main {
+    flex-direction : column-reverse;
+}
+
+main aside {
+    width : 100%;
+    text-align : center;
 }

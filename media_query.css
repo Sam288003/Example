@@ -1,0 +1,53 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+body {
+    font-family : "Times New Roman" , Times, serif;
+}
+
+/* when screen size > 1200px, the background color will be disabled */
+/* also has max-width */
+@media screen and (min-width : 1200px) {
+    .widescreen {
+        background-color: orange;
+    }
+}
+
+@media (max-width : 992px) {
+    .normal {
+        background-color: lightblue;
+    }
+}
+
+@media (max-width : 768px) {
+    .ipad {
+        background-color: lightgreen;
+    }
+}
+
+@media (max-width : 576px) {
+    .iphone {
+        background-color: pink;
+    }
+}
+    
+@media (orientation : landscape) {
+    .landscape {
+        background-color : violet;
+    }
+}
+
+@media (max-height : 500px) {
+    .height {
+        background-color: red;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 991px) {
+    body {
+        background-color: #333;
+    }
+}
