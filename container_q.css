@@ -1,0 +1,55 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    border : 1px solid red;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size : 18px;
+}
+
+.container {
+    display : flex;
+}
+
+p {
+    padding : 2rem;
+}
+
+main {
+    container-type : inline-size;
+    container-name : mX;
+    width : 100%;
+    margin : 30px auto;
+    padding : 20px;
+}
+
+main p {
+    background: green;
+}
+
+aside {
+    container-type : inline-size; /* must set this for container query */
+    container-name : aX;  /* must set variable */
+    flex : 0 0 30%;
+    background: orange;
+    padding : 20px;
+}
+
+/* query must be put at the end of css because the last query
+setting will override the previous setting */ 
+
+/* container query */
+@container mX (max-width : 992px) {
+    main p {
+        background : lightblue;
+    }
+}
+
+@container aX (max-width : 300px) {
+    aside p {
+        background : lightgreen;
+    }
+}

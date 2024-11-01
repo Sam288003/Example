@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <link rel="stylesheet" href = "jstemp.css" />
+    <title>Document</title>
+</head>
+
+<body>
+   
+    <div class = "container">
+        <header>
+        <h1 id="app-title">Shopping List</h1>
+        <!-- <h1 id="app-title" Class = "btn">Shopping List</h1> -->
+        <!-- <img src="sporty.jpg" width="20px" height="20px" /> -->
+        <!-- <a href="https:www.google.com" id="google" class="google btn">google</a> -->
+    </header>
+
+        <form id = "item-form">
+            <div class = "form-control">
+                <input
+                    type="text"
+                    class="form-input"
+                    id="item-input"
+                    name="item"
+                    placeholder="Enter Item"
+                />
+            </div>
+            <!-- select input -->
+             <select name = "priority" id = "priority-input" class = "form-input">
+                <option value = "0">Select Priority</option>
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+             </select>
+             <!-- checkbox input-->
+              <input type="checkbox" id="checkbox" /> Recurring Item
+            <div class="form-control">
+                <button type="submit" class="btn">
+                    <i class="fa-solid fa-plus"></i>Add Item 
+                </button>
+            </div>
+        </form>
+        <div class = "filter">
+            <input type="text" class="form-input-filter" id="filter"
+            placeholder = "filter items" />
+        </div>
+
+        <ul id="item-list" class="items">
+            <li class="item">
+                Apple
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+
+            <li class="item">
+                Orange
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+
+            <li class="item">
+                Banana
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+
+            <li class="item">
+                Milk
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+        </ul>
+        <button class="btn-clear" id="clear">Clear all</button>
+    </div>
+    <!-- <script src = "jstemp.js"></script> -->
+    <!-- <script src = "Js_singlelement.js"></script> -->
+    <!-- <script src = "Js_multielement.js"></script> -->
+    <!-- <script src = "Traversing_dom.js"></script> -->
+    <!-- <script src = "Js_Traversing_node.js"></script> -->
+    <!-- <script src = "Create_element.js"></script> -->
+    <!-- <script src = "Create_item.js"></script> -->
+    <!-- <script src = "Refactor_create_item.js"></script> -->
+    <!-- <script src = "Insert_element.js"></script> -->
+    <!-- <script src = "Remove_element.js"></script> -->
+    <!-- <script src = "Replace_element.js"></script> -->
+    <!-- <script src = "Keyboard_event.js"></script> --> 
+    <!-- <script src = "Form.js"></script> -->
+    <!-- <script src = "Bubbling.js"></script> -->
+    <script src = "Delegation.js"></script> 
+
+</body>
+</html>
+

@@ -1,0 +1,57 @@
+* {  /* the smallest * is universal selector */
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+:root {
+    --primary-color : brown ;
+    --container-width-large : 1100px;
+    --larger : 40px;
+}
+
+body {
+    font-family : "Times New Roman" ,  Times, serif;
+}
+
+header {
+    background-color: red;
+    padding : 20px 0;
+    text-align : center;
+    margin-bottom : 10px;
+}
+
+.container {
+    --primary-color : palegreen;  /* Custom Properties --variable-name : variable value */
+    --secondary-color : yellow;
+    --third-color : pink;
+}   /* --primary-cover is the selector based on BEM approach, block, element, modifier */
+
+.container {
+    display : flex;
+    max-width : 800px;
+    margin : 30px auto;
+    gap : 20px;
+}
+
+.box-1 {
+    background : var(--primary-color);  /* var(-- MUST NO SPACE btn */
+}
+
+.box-2 {
+    background : var(--secondary-color);
+}
+
+.box-3 {
+    background : var(--third-color);
+}
+
+container-lg {
+    max-width : var(--container-width-large);
+}
+
+@media (max-width : 500px) {
+    header {
+        background : orange;
+    }
+}
